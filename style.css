@@ -105,7 +105,7 @@ h2 a:hover {
         background: #ccc;
     }
 
-    form input {
+    .searchbar form input {
         font-size: 1rem;
         margin: 0;
         width: 600px;
@@ -316,4 +316,85 @@ h2 a:hover {
         color: #818080;
         margin-top: 0;
         font-size: 0.6rem;
+    }
+
+/* footer */
+footer {
+    background: #2a2a2a;
+    color: #fff;
+    margin-top: 0;
+    padding: 10px auto;
+}
+
+    .footer-cont {
+        padding-top: 10px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: row;
+        max-width: 98%;
+        justify-content: space-evenly;
+    }
+
+    .footer-section {
+        margin: 0 auto;
+        max-width: 48%;
+        width: 48%;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    footer a:hover {
+        font-weight: bold;
+        border-bottom: 2px solid #fff;
+    }
+
+    footer li {
+        list-style-type: none;
+        padding: 10px;
+        max-width: 97%;
+    }
+
+    footer h2 {
+        max-width: 100%;
+    }
+/*
+    footer label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+*/
+    footer input {
+        margin: 30px auto;
+        margin-bottom: 5px;
+        width: 97%;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    footer .btn {
+        border-radius: 10px;
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .footer-copy {
+        border-top: 3px solid #ccc;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    footer p {
+        font-weight: bold;
+    }
+
+    .footer-connect {
+        padding-bottom: 20px;
+    }
+
+    .footer-copy a {
+        text-decoration: none;
     }

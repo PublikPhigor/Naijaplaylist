@@ -99,8 +99,12 @@ h2 a:hover {
 .searchbar {
     margin: 10px auto;
     max-width: 80%;
-    display: flex
 }
+
+    .searchbar form {
+        display: flex;
+    }
+
     .search-focus:focus {
         background: #ccc;
     }
@@ -109,7 +113,7 @@ h2 a:hover {
         font-size: 1rem;
         margin: 0;
         width: 600px;
-        padding: 8px;
+        padding: 5px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         border: 2px solid #ccc;
@@ -118,7 +122,7 @@ h2 a:hover {
     .search-btn {
         font-weight: 400;
         text-transform: uppercase;
-        padding: .35rem 2rem .65rem 2rem;
+        padding: 5px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         margin-left: -20px;
@@ -398,3 +402,181 @@ footer {
     .footer-copy a {
         text-decoration: none;
     }
+
+    footer form input:focus {
+        background: #ccc;
+    }
+
+
+
+
+
+
+/* media queries */
+@media(max-width: 768px){
+    .container {
+        width: 95%;
+        max-width: 95%;
+    }
+
+    /* font awesome */
+.fa, .fab, .fas {
+    padding-right: 2px;
+    color: #fff;
+}
+
+/* navbar */            
+header nav {
+    padding: 5px;
+}
+
+    header ul {
+        display: flex;
+        max-width: 100%;
+        overflow: auto;
+        margin: auto;
+    }
+
+    header li {
+        display: flex;
+        font-size: .7rem;
+        padding-right: 7px;
+    }
+
+    header a {
+        margin-left: 5px;
+        font-weight: bolder;
+        padding-left: 5px;
+    }
+    
+/* searchbar */
+.searchbar {
+    margin: 10px auto;
+    max-width: 70%;
+} 
+
+    .searchbar form input {
+        font-size: .9rem;
+        margin: 0;
+        width: 500px;
+        padding: 5px;
+    }
+
+    .search-btn {
+        font-weight: 300;
+        text-transform: capitalize;
+        padding: 5px 10px;
+    }
+
+/* main */
+.body-cont {
+    flex-direction: column;
+    padding: 0;
+}
+
+    .blog-body {
+        width: 98%;
+    }
+
+    .main-section {
+        width: 98%;
+        max-width: 98%;
+        margin: auto
+    }
+
+    .trending {
+        padding: auto 2%;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+    }
+    
+    .trending-cont {
+        max-width: 30%;
+        margin: 5px auto;
+    }
+
+/* latest posts */
+.latest-posts-item img {
+    height: 100px;
+    width: 120px;
+}
+
+    .latest-posts-item h2 {
+        width: 98%;
+        font-size: 1rem;
+        margin: auto;
+    }
+
+    /* comment */
+
+    .latest-posts-item p {
+        font-size: .7rem;
+        margin-top: 3px;
+    }
+    p .fa {
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+    /* sidebar */
+.aside-section {
+    width: 98%;
+    max-width: 98%;
+    margin: auto;
+}
+
+    .sidebar {
+        float: none;
+    }
+
+    .sidebar-cont h2 {
+        margin-top: 10px;
+    }
+
+    .ad-section img {
+        width: 100%;
+    }
+
+
+/* footer */
+footer {
+    background: #2a2a2a;
+    color: #fff;
+    margin-top: 0;
+    padding: 10px auto;
+}
+
+    .footer-cont {
+        padding-top: 10px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        max-width: 98%;
+        justify-content: space-evenly;
+    }
+
+    .footer-section {
+        margin: 0 auto;
+        max-width: 98%;
+        width: 98%;
+    }
+
+    .footer-section h2 {
+        border-radius: 0;
+        width: 100%;
+    }
+    
+    footer input {
+        width: 96%;
+    }
+
+    footer .btn {
+        width: 100%;
+    }
+
+    .footer-copy {
+        padding: 0 5px;
+    }
+
+}
